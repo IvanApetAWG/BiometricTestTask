@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="BiometricTestTask" customModuleProvider="target">
+            <connections>
+                <outlet property="pinTF" destination="vXL-lP-JTh" id="ETD-QT-wwC"/>
+                <outlet property="setPinBtn" destination="L39-5x-jF7" id="Uhe-g6-1dG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пин" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vXL-lP-JTh">
+                    <rect key="frame" x="24" y="104" width="366" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EIB-vR-zgt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L39-5x-jF7">
+                    <rect key="frame" x="24" y="189" width="366" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EQN-EM-vTk"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vXL-lP-JTh" secondAttribute="trailing" constant="24" id="5v1-7o-wiA"/>
+                <constraint firstAttribute="trailing" secondItem="L39-5x-jF7" secondAttribute="trailing" constant="24" id="67T-QD-tA1"/>
+                <constraint firstItem="L39-5x-jF7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="CHu-G9-ww4"/>
+                <constraint firstItem="L39-5x-jF7" firstAttribute="top" secondItem="vXL-lP-JTh" secondAttribute="bottom" constant="25" id="Wcc-i4-FgC"/>
+                <constraint firstItem="vXL-lP-JTh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="kQx-hk-uds"/>
+                <constraint firstItem="vXL-lP-JTh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="yie-wh-GjI"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

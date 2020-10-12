@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorizationViewController" customModule="BiometricTestTask" customModuleProvider="target">
+            <connections>
+                <outlet property="biometricBtn" destination="uCK-ob-f5F" id="bVH-B3-Hvk"/>
+                <outlet property="textField" destination="Ux2-o4-ntP" id="WCY-ek-NOa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пин" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ux2-o4-ntP">
+                    <rect key="frame" x="24" y="323" width="366" height="60"/>
+                    <color key="backgroundColor" red="0.63194501400000003" green="0.64187383649999996" blue="0.69804763790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="dpv-bG-FdY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCK-ob-f5F">
+                    <rect key="frame" x="177" y="233.5" width="60" height="58.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="DTa-Re-cXY"/>
+                        <constraint firstAttribute="height" constant="60" id="LaY-uv-Z7S"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="faceid" catalog="system"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ux2-o4-ntP" secondAttribute="trailing" constant="24" id="0l7-eV-K4l"/>
+                <constraint firstItem="uCK-ob-f5F" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="BeU-Eh-qgm"/>
+                <constraint firstItem="Ux2-o4-ntP" firstAttribute="top" secondItem="uCK-ob-f5F" secondAttribute="bottom" constant="30" id="HTz-Jd-QX5"/>
+                <constraint firstItem="Ux2-o4-ntP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="HrL-tK-TrX"/>
+                <constraint firstItem="Ux2-o4-ntP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JYf-tl-tgS"/>
+                <constraint firstItem="Ux2-o4-ntP" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-100" id="wqB-YX-vuT"/>
+            </constraints>
+            <point key="canvasLocation" x="142" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="faceid" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
